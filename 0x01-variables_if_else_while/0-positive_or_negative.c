@@ -4,8 +4,10 @@
 /* more headers goes there */
 
 /**
- * main is the entry point for program
- * */
+ * main - is the entry point for the program
+ *
+ * return - 0 is return if there were no errors
+ */
 int main(void)
 {
 	int n;
