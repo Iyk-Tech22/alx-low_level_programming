@@ -15,7 +15,10 @@ int main(void)
 		for (b = 0; b < 1; b++)
 		{
 			if (n != 9)
+			{
 				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
