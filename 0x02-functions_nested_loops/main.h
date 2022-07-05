@@ -1,8 +1,8 @@
-#ifndef _PUTCHAR_H
-#define _PUTCHAR_H
+#ifndef MAIN_H
+#define MAIN_H
 
 /**
  * _putchar - prototype function
  */
-void _putchar(void);
+int _putchar(char c);
 #endif
