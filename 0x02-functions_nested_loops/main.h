@@ -1,15 +1,8 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
-#include <stdio.h>
+#ifndef _PUTCHAR_H
+#define _PUTCHAR_H
 
 /**
  * _putchar - prototype function
- *
- * Return: 0 if there is no error
  */
-int _putchar(void)
-{
-	printf("_putchar\n");
-	return (0);
-}
+void _putchar(void);
 #endif
