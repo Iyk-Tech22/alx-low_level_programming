@@ -24,7 +24,7 @@ int _isalpha(char c)
 	{
 		if (a == c)
 			break;
-		if (A == c)
+		if (c == A)
 		{
 			found = 1;
 			break;
