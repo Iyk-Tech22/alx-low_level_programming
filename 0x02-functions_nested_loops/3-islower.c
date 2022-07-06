@@ -9,6 +9,7 @@
 int _islower(char c)
 {
 	char alph;
+
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
 		if (alph == c)
