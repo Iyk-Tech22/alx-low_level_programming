@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point of the program
- *
- * Return: 0 if there were no error
+ * print_alphabet - It print alphabet
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char alph;
+
+	for (alph = 'a'; alph <= 'z'; alph++)
+		_putchar(alph);
+	_putchar('\n');
 }
