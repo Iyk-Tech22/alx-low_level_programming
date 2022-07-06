@@ -22,13 +22,13 @@ int _isalpha(char c)
 	}
 	for (A = 'A'; A <= 'Z'; A++)
 	{
-		if (a != c && A == c)
+		if (a == c)
+			break;
+		if (A == c)
 		{
 			found = 1;
 			break;
 		}
-		else
-			break;
 	}
 	if (found)
 		return (1);
