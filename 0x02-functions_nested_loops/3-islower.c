@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool>
 
 /**
  * _islower - Checks data if it lowercase
