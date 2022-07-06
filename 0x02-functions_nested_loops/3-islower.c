@@ -9,12 +9,17 @@
 int _islower(char c)
 {
 	char alph;
+	bool found = false;
 
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
 		if (alph == c)
-			return (1);
-		else
-			return (0);
+		{
+			found = true;
+			break;
+		}
 	}
+	if (found)
+		return (1);
+	return (0);
 }
