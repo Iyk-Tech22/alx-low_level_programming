@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdbool>
 
 /**
  * _islower - Checks data if it lowercase
@@ -10,13 +9,13 @@
 int _islower(char c)
 {
 	char alph;
-	bool found = false;
+	int found = 0;
 
 	for (alph = 'a'; alph <= 'z'; alph++)
 	{
 		if (alph == c)
 		{
-			found = true;
+			found = 1;
 			break;
 		}
 	}
