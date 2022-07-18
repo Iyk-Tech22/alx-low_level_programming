@@ -5,18 +5,19 @@
  * @s: String to search
  * @c: Character to search for
  *
- * Return: Pointer to the first occurence or Null if not found
+ * Return: Pointer to the first occurence or Null
  */
 char *_strchr(char *s, char c)
 {
-
-	while (*s != '\0')
+	while (*s)
 	{
-		if (*s == c)
-		{
+		if (*s != c)
+			s++;
+		else
 			return (s);
-		}
-		s++;
 	}
+	if (c == '\0')
+		return (s);
+
 	return (NULL);
 }
