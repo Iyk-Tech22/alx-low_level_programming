@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - Get the length of a substring in a string
+ * _strspn - Get the length of a substring
  * @s: Input string to check for march
  * @accept: Substring to check for march
  *
@@ -27,5 +27,5 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		accept++;
 	}
-	return (n + 1);
+	return (n);
 }
