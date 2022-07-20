@@ -1,31 +1,33 @@
 #include "main.h"
 
 /**
- * _strspn - Get the length of a substring
- * @s: Input string to check for march
- * @accept: Substring to check for march
+ * _strspn - a function that gets the length of a prefix substring
  *
- * Return: Length of substring in the string
+ * @s: the initial segment of
+ *
+ * @accept: which consist only of bytes from
+ *
+ * Return: the number of bytes
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	char *strp;
-	unsigned int n;
+	int z, x, y;
 
-	n = 0;
-	while (*accept != '\0')
+	z = 0;
+	for (x = 0; s[x] != '\0'; x++)
 	{
-		strp = s;
-		while (*strp != '\0')
+		if (s[x] != 32)
 		{
-			if (*strp == *accept)
+			for (y = 0; accept[y] != '\0'; y++)
 			{
-				n++;
-				break;
+				if (s[x] == accept[y])
+					z++;
 			}
-			strp++;
 		}
-		accept++;
+		else
+			return (z);
 	}
-	return (n);
+		return (z);
+
 }
