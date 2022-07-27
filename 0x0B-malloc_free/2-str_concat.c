@@ -13,19 +13,24 @@ char *str_concat(char  *str1, char *str2)
 	int i, j,  strlen1, strlen2, size;
 	char *concat;
 
-	if (str1 == NULL || str2 == NULL)
-		return (NULL);
 	i = j = strlen1 = strlen2 = 0;
-	while (str1[i])
+	if (str1 != NULL)
 	{
-		strlen1++;
-		i++;
+		i = 0;
+		while (str1[i])
+		{
+			strlen1++;
+			i++;
+		}
 	}
-	i = 0;
-	while (str2[i])
+	if (str2 != NULL)
 	{
-		strlen2++;
-		i++;
+		i = 0;
+		while (str2[i])
+		{
+			strlen2++;
+			i++;
+		}
 	}
 	size = strlen1 + strlen2;
 	concat = malloc(size + 1);
