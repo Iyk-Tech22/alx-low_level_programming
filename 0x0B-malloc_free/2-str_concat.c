@@ -14,7 +14,7 @@ char *str_concat(char  *str1, char *str2)
 	char *concat;
 
 	if (str1 == NULL || str2 == NULL)
-		return ("");
+		return (NULL);
 	i = j = strlen1 = strlen2 = 0;
 	while (str1[i])
 	{
