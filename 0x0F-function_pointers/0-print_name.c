@@ -7,5 +7,6 @@
  */
 void print_name(char *name, void (*func)(char *n))
 {
-	func(name);
+	if (name != NULL && func != NULL)
+		func(name);
 }
