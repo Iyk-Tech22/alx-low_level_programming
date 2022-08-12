@@ -18,5 +18,12 @@ typedef struct list_s
 }list_t;
 /* print list elem */
 size_t print_list(const list_t *);
-
+/* length of list */
+size_t list_len(const list_t *h);
+/* add node to the list */
+list_t *add_node(list_t **head, const char *str);
+/* Add node to the end of the list */
+list_t *add_node_end(list_t **head, const char *str);
+/* Free the list from memory */
+void free_list(list_t *head);
 #endif
