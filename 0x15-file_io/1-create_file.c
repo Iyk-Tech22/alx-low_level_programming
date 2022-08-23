@@ -5,7 +5,7 @@
 
 /**
   * create_file - Create a file with a specified name and content
-  * @filename: Name of the file to create
+  * @filename: File to create
   * @text_content: Content to read into the file
   *
   * Return: 1 on success, -1 on any failure
