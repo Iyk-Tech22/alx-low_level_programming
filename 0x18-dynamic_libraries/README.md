@@ -1,0 +1,4 @@
+#cisfun
+#dohardthings
+#ilovetotalkmycomputer
+#programmingisfun
