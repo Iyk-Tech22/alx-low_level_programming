@@ -5,7 +5,7 @@
 /**
  * print_numbers - print all the ints passed
  * @n: number of args
- * @sep: separator pointer
+ * @sep: separator
  *
  * Return: sum of ints
  */
